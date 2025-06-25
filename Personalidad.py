@@ -29,7 +29,7 @@ if entrada:
     st.chat_message("user").write(entrada)
 
     respuesta = openai.ChatCompletion.create(
-        model="gpt-4o",
+        model="gpt-4.0-mini",
         messages=st.session_state.mensajes,
         temperature=0.8,
         max_tokens=600
